@@ -1,0 +1,7 @@
+# Edit to add a color aesthetic mapped to disp
+ggplot(mtcars, aes(wt, mpg, color= disp)) +
+  geom_point()
+  
+# Change the color aesthetic to a size aesthetic
+ggplot(mtcars, aes(wt, mpg, size = disp)) +
+  geom_point()
