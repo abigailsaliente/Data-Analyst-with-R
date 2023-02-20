@@ -1,0 +1,11 @@
+# 3 aesthetics: qsec vs. mpg, colored by fcyl
+ggplot(mtcars, aes(x= mpg, y=qsec, color= fcyl)) +
+  geom_point()
+  
+# 4 aesthetics: add a mapping of shape to fam
+ggplot(mtcars, aes(mpg, qsec, color = fcyl, shape= fam)) +
+  geom_point()
+  
+ # 5 aesthetics: add a mapping of size to hp / wt
+ggplot(mtcars, aes(mpg, qsec, color = fcyl, shape = fam, size= hp / wt)) +
+  geom_point()
