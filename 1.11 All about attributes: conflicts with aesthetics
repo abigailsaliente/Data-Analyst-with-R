@@ -1,0 +1,14 @@
+# Part 1
+ggplot(mtcars, aes(wt, mpg, color = fcyl)) +
+  # Add point layer with alpha 0.5
+  geom_point(alpha= 0.5)
+ 
+# Part 2
+ ggplot(mtcars, aes(wt, mpg, color = fcyl)) +
+  # Add text layer with label rownames(mtcars) and color red
+  geom_text(label= row.names(mtcars), color="red" )
+  
+# Part 3
+ggplot(mtcars, aes(wt, mpg, color = fcyl)) +
+  # Add points layer with shape 24 and color yellow
+  geom_point(color= "yellow", shape= 24)
