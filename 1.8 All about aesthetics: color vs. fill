@@ -1,0 +1,11 @@
+# Map fcyl to fill
+ggplot(mtcars, aes(wt, mpg, fill = fcyl)) +
+  geom_point(shape = 1, size = 4)
+  
+ggplot(mtcars, aes(wt, mpg, fill = fcyl)) +
+  # Change point shape; set alpha
+  geom_point(alpha= 0.6, shape = 21, size = 4)
+  
+ # Map color to fam
+ggplot(mtcars, aes(wt, mpg, color = fam, fill=fcyl)) +
+  geom_point(shape = 21, size = 4, alpha = 0.6)
