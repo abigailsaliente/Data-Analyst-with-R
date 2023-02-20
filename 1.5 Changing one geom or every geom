@@ -1,0 +1,9 @@
+# Map the color aesthetic to clarity
+ggplot(diamonds, aes(carat, price, color= clarity)) +
+  geom_point() +
+  geom_smooth()
+
+# Make the points 40% opaque
+ggplot(diamonds, aes(carat, price, color = clarity)) +
+  geom_point(alpha= 0.4) +
+  geom_smooth()
