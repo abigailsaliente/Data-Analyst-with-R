@@ -1,3 +1,3 @@
-# Data-Analyst-with-R
+# Data-Visualization-with-R
 
 DataCamp Exercise
